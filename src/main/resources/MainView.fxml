@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.library.client.MainController">
+    <top>
+        <MenuBar fx:id="menuBar">
+            <Menu text="Books">
+                <MenuItem text="View All Books" onAction="#onViewAllBooks"/>
+                <MenuItem text="Add Book" onAction="#onAddBook"/>
+            </Menu>
+            <Menu text="Copies">
+                <MenuItem text="View All Copies" onAction="#onViewAllCopies"/>
+                <MenuItem text="Add Copy" onAction="#onAddCopy"/>
+            </Menu>
+            <Menu text="Issues">
+                <MenuItem text="View All Issues" onAction="#onViewAllIssues"/>
+                <MenuItem text="Issue Book" onAction="#onIssueBook"/>
+                <MenuItem text="Return Book" onAction="#onReturnBook"/>
+            </Menu>
+            <Menu text="Statistics">
+                <MenuItem text="Popular Books" onAction="#onPopularBooks"/>
+            </Menu>
+            <Menu text="Account">
+                <MenuItem text="Back to Registration" onAction="#onBackToRegistration"/>
+            </Menu>
+            <Menu text="Profiles" fx:id="profilesMenu">
+                <MenuItem text="My Profile" onAction="#onMyProfile"/>
+                <MenuItem text="View Reader Profiles" onAction="#onViewReaderProfiles"/>
+            </Menu>
+
+        </MenuBar>
+    </top>
+    <center>
+        <TableView fx:id="tableView"/>
+    </center>
+</BorderPane>

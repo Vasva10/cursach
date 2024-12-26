@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.library.client.AddCopyController">
+    <Label text="Add Copy"/>
+    <TextField fx:id="bookIdField" promptText="Book ID"/>
+    <TextField fx:id="invNumberField" promptText="Inventory Number"/>
+    <Button text="Add" onAction="#onAdd"/>
+</VBox>

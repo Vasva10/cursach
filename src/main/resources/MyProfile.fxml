@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.library.client.MyProfileController">
+    <Label text="My Profile"/>
+    <Label text="Favorite Books:"/>
+    <TableView fx:id="favoritesTable"/>
+    <Label text="Notes:"/>
+    <ListView fx:id="notesList"/>
+    <HBox spacing="10">
+        <TextField fx:id="bookIdField" promptText="Book ID to add to favorites"/>
+        <Button text="Add to Favorites" onAction="#onAddFavoriteBook"/>
+    </HBox>
+    <HBox spacing="10">
+        <TextField fx:id="noteField" promptText="Note"/>
+        <Button text="Add Note" onAction="#onAddNote"/>
+    </HBox>
+</VBox>

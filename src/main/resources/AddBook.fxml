@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.library.client.AddBookController">
+    <Label text="Add Book"/>
+    <TextField fx:id="titleField" promptText="Title"/>
+    <TextField fx:id="authorField" promptText="Author"/>
+    <TextField fx:id="yearField" promptText="Year"/>
+    <TextField fx:id="isbnField" promptText="ISBN"/>
+    <TextField fx:id="genreField" promptText="Genre"/>
+    <Button text="Add" onAction="#onAdd"/>
+</VBox>

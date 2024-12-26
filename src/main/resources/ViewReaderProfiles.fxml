@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.library.client.ViewReaderProfilesController">
+    <Label text="All Reader Profiles"/>
+    <ListView fx:id="readersList"/>
+    <Button text="View Selected Profile" onAction="#onViewProfile"/>
+    <Label fx:id="selectedUserLabel" text="Selected Profile:"/>
+    <Label text="Favorite Books:"/>
+    <TableView fx:id="favoritesTable"/>
+    <Label text="Notes:"/>
+    <ListView fx:id="notesList"/>
+</VBox>
